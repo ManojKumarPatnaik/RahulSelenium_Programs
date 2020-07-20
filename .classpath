@@ -46,5 +46,6 @@
 	<classpathentry kind="lib" path="C:/Users/hp au-620tx/Desktop/Selenium/SW/commons-io-2.7-bin/commons-io-2.7/commons-io-2.7-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/hp au-620tx/Desktop/Selenium/SW/commons-io-2.7-bin/commons-io-2.7/commons-io-2.7-tests.jar"/>
 	<classpathentry kind="lib" path="C:/Users/hp au-620tx/Desktop/Selenium/SW/commons-io-2.7-bin/commons-io-2.7/commons-io-2.7-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp au-620tx/Desktop/Selenium/SW/sikulixapi-1.1.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

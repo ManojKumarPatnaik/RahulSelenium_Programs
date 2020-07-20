@@ -1,3 +1,5 @@
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,10 +17,10 @@ public class FileUploadSendKeys {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.navigate().to("https://html.com/input-type-file/");
-		Thread.sleep(3000);
-		//WebDriverWait wait=new WebDriverWait(driver,5);
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(@class,'pm-cta pm-cancel-btn')]")));
-		driver.findElement(By.xpath("//a[contains(@class,'pm-cta pm-cancel-btn')]")).click();
+		//driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+		WebDriverWait wait=new WebDriverWait(driver,8);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='pm-cta pm-cancel-btn']")));
+		driver.findElement(By.xpath("//a[@class='pm-cta pm-cancel-btn']")).click();
 		System.out.println("Pop up closed");	
 		/*WebDriverWait wait = new WebDriverWait(driver, 10 timeout in seconds);
 		wait.until(ExpectedConditions.alertIsPresent());
